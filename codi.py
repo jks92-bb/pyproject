@@ -5,6 +5,7 @@ import random
 def get_codi_by_season(season):
     codi = None
     image_url = None
+    item_links = None  # 추가된 부분
 
     if season == "겨울":
         codi = ["겨울 셋업", "러블리 겨울", "컬러 포인트 겨울", "파스텔 겨울", "스포츠 겨울"]
@@ -42,7 +43,31 @@ def get_codi_by_season(season):
         "봄 맞이 스타일링": "https://image.msscdn.net/images/codimap/detail/14403/detail_14403_1_500.jpg?202312051512",
         "봄 느낌 물씬": "https://image.msscdn.net/images/codimap/detail/13955/detail_13955_1_500.jpg?202312051512"
     }
+    
+    item_links = {
+        "겨울 셋업": "https://www.musinsa.com/app/codimap/views/28463",
+        "러블리 겨울": "https://www.musinsa.com/app/codimap/views/28376",
+        "컬러 포인트 겨울": "https://www.musinsa.com/app/codimap/views/27681",
+        "파스텔 겨울": "https://www.musinsa.com/app/codimap/views/27648",
+        "스포츠 겨울": "https://www.musinsa.com/app/codimap/views/20556",
+        "가을 니트": "https://www.musinsa.com/app/codimap/views/26535",
+        "완벽한 가을": "https://www.musinsa.com/app/codimap/views/26257",
+        "가을 데이트": "https://www.musinsa.com/app/codimap/views/25840",
+        "가을 아메카지 룩": "https://www.musinsa.com/app/codimap/views/18881",
+        "가을 무드 완성": "https://www.musinsa.com/app/codimap/views/8747",
+        "여름엔 데임": "https://www.musinsa.com/app/codimap/views/23513",
+        "여름엔 이렇게": "https://www.musinsa.com/app/codimap/views/17598",
+        "여름에 딱이야": "https://www.musinsa.com/app/codimap/views/16682",
+        "심플한 여름": "https://www.musinsa.com/app/codimap/views/4740",
+        "쿨한 여름": "https://www.musinsa.com/app/codimap/views/3879",
+        "봄 캐쥬얼 룩": "https://www.musinsa.com/app/codimap/views/22619",
+        "봄 데이트": "https://www.musinsa.com/app/codimap/views/14137",
+        "화사한 봄": "https://www.musinsa.com/app/codimap/views/14841",
+        "봄 맞이 스타일링": "https://www.musinsa.com/app/codimap/views/14403",
+        "봄 느낌 물씬": "https://www.musinsa.com/app/codimap/views/14871"
+    }
 
     image_url = image_urls.get(selected_codi, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx9cTPon4vY8hARZEH82VaeKY7K2ymGYeYoi89tnB_epPpLEKc84DUhaDnOR8OiHwn6-U&usqp=CAU")  # 선택된 코디에 대한 이미지 URL 가져오기
-
-    return selected_codi, image_url
+    item_link = item_links.get(selected_codi, "https://example.com/default_item_link")  # 선택된 코디에 대한 링크 가져오기
+    
+    return selected_codi, image_url, item_link
