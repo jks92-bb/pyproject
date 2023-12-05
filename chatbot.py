@@ -31,11 +31,11 @@ def hello_kakao():
         season = next((s.strip() for s in season_keywords if s in my_req), None)
 
         if season:
-            recommended_codi, image_url = get_codi_by_season(season)
-            response = create_codi_response(recommended_codi, image_url)
+            recommended_codi, image_url, item_link = get_codi_by_season(season)
+            response = create_codi_response(recommended_codi, image_url, item_link)
         else:
             response = {"error": "계절 키워드를 찾을 수 없습니다."}
-
+            
     return jsonify(response)
 
 if __name__ == "__main__":
