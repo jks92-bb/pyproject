@@ -18,7 +18,7 @@ def create_weather_response(weather_info):
         }
     }
 
-def create_codi_response(recommended_codi, image_url):
+def create_codi_response(recommended_codi, image_url, item_link):
     return {
         "version": "2.0",
         "template": {
@@ -28,10 +28,18 @@ def create_codi_response(recommended_codi, image_url):
                         "description": f"오늘 같은 날엔 {recommended_codi} 코디를 추천 드려요!\n",
                         "thumbnail": {
                             "imageUrl": image_url
-                        }
+                        },
+                        'buttons': [
+                            {
+                                "action": "webLink",
+                                "label": "구매링크",
+                                "webLinkUrl": item_link
+                            }
+                        ]
                     }
                 }
             ]
         }
     }
+
 # 다른 유형의 응답을 생성하는 함수 추가 가능
