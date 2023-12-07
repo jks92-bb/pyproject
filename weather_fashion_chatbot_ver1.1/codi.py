@@ -53,18 +53,18 @@ def get_codi_by_season(season):
         "가을 니트": "https://www.musinsa.com/app/codimap/views/26535",
         "완벽한 가을": "https://www.musinsa.com/app/codimap/views/26257",
         "가을 데이트": "https://www.musinsa.com/app/codimap/views/25840",
-        "가을 아메카지 룩": "https://www.musinsa.com/app/codimap/views/18881",
+        "가을 아메카지 룩": "https://www.musinsa.com/app/codimap/views/19344",
         "가을 무드 완성": "https://www.musinsa.com/app/codimap/views/8747",
         "여름엔 데임": "https://www.musinsa.com/app/codimap/views/23513",
-        "여름엔 이렇게": "https://www.musinsa.com/app/codimap/views/17598",
+        "여름엔 이렇게": "https://www.musinsa.com/app/codimap/views/23291",
         "여름에 딱이야": "https://www.musinsa.com/app/codimap/views/16682",
         "심플한 여름": "https://www.musinsa.com/app/codimap/views/4740",
         "쿨한 여름": "https://www.musinsa.com/app/codimap/views/3879",
         "봄 캐쥬얼 룩": "https://www.musinsa.com/app/codimap/views/22619",
-        "봄 데이트": "https://www.musinsa.com/app/codimap/views/14137",
-        "화사한 봄": "https://www.musinsa.com/app/codimap/views/14841",
+        "봄 데이트": "https://www.musinsa.com/app/codimap/views/21845",
+        "화사한 봄": "https://www.musinsa.com/app/codimap/views/14942",
         "봄 맞이 스타일링": "https://www.musinsa.com/app/codimap/views/14403",
-        "봄 느낌 물씬": "https://www.musinsa.com/app/codimap/views/14871"
+        "봄 느낌 물씬": "https://www.musinsa.com/app/codimap/views/13955"
     }
 
     image_url = image_urls.get(selected_codi, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx9cTPon4vY8hARZEH82VaeKY7K2ymGYeYoi89tnB_epPpLEKc84DUhaDnOR8OiHwn6-U&usqp=CAU")  # 선택된 코디에 대한 이미지 URL 가져오기
